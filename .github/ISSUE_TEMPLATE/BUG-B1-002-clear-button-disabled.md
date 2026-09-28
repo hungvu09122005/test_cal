@@ -1,9 +1,11 @@
 ---
 name: Bug report
 about: Tạo báo cáo lỗi phát hiện trong quá trình kiểm thử Basic Calculator
-title: '[BUG]: Build 1 - Nút Clear bị vô hiệu hóa (disabled) sau khi xảy ra lỗi chia cho 0'
-labels: 'bug'
+title: "[BUG]: Build 1 - Nút Clear bị vô hiệu hóa (disabled) sau khi xảy ra lỗi chia
+  cho 0"
+labels: bug
 assignees: ''
+
 ---
 
 ## Mô tả lỗi (Bug Description)
