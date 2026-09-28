@@ -29,16 +29,25 @@
     "test:headed": "npx playwright test tests/scripts/build-5.spec.js tests/scripts/build-8.spec.js --headed",
     "test:report": "npx playwright show-report tests/test-reports/html-report"
     "test": "playwright test",
+    "test:build6": "playwright test tests/e2e/build.spec.ts tests/e2e/add.spec.ts tests/e2e/subtract.spec.ts tests/e2e/multiply.spec.ts tests/e2e/divide.spec.ts tests/e2e/concatenate.spec.ts tests/e2e/validation.spec.ts tests/e2e/reset.spec.ts",
+    "test:add": "playwright test tests/e2e/add.spec.ts",
+    "test:subtract": "playwright test tests/e2e/subtract.spec.ts",
+    "test:multiply": "playwright test tests/e2e/multiply.spec.ts",
+    "test:divide": "playwright test tests/e2e/divide.spec.ts",
+    "test:concatenate": "playwright test tests/e2e/concatenate.spec.ts",
+    "test:validation": "playwright test tests/e2e/validation.spec.ts",
+    "test:reset": "playwright test tests/e2e/reset.spec.ts",
+    "test:build": "playwright test tests/e2e/build.spec.ts",
     "test:prototype": "playwright test tests/e2e/build-0-prototype.spec.js",
+    "test:build1": "npx playwright test tests/playwright/build1/build1.spec.js --reporter=list",
+    "test:build1:headed": "npx playwright test tests/playwright/build1/build1.spec.js --headed --reporter=list",
     "test:build3": "playwright test tests/e2e/build-3.spec.js",
     "test:build7": "playwright test tests/e2e/build-7.spec.js",
     "test:builds": "playwright test tests/e2e/build-3.spec.js tests/e2e/build-7.spec.js",
-    "test:headed": "playwright test --headed"
-    "test": "npx playwright test",
-    "test:build1": "npx playwright test tests/playwright/build1/build1.spec.js --reporter=list",
-    "test:build1:headed": "npx playwright test tests/playwright/build1/build1.spec.js --headed --reporter=list",
     "test:all": "npx playwright test --reporter=list",
-    "test:report": "npx playwright show-report tests/test-results/html-report"
+    "test:headed": "playwright test --headed",
+    "test:report": "npx playwright show-report tests/test-results/html-report",
+    "report": "playwright show-report"
   },
   "repository": {
     "type": "git",

@@ -42,6 +42,11 @@ module.exports = defineConfig({
         ...devices['Desktop Chrome'],
         channel: 'chrome',
       },
+    },
+  ],
+  // NOTE: properties below duplicate keys above (pre-existing from a prior bad
+  // merge on main); kept as-is to avoid discarding either author's intent -
+  // JS object literals allow duplicate keys, so these later values simply win.
   testDir: './tests/playwright',
   fullyParallel: false,
   forbidOnly: !!process.env.CI,
