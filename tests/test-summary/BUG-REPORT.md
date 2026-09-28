@@ -1,6 +1,8 @@
 # BÁO CÁO TỔNG HỢP KIỂM THỬ VÀ BUG REPORTS (BUILDS 1 - 8)
 *Dự án:* Basic Calculator Automation Testing  
 *Hệ thống:* [Basic Calculator (Test Sheep NZ)](https://testsheepnz.github.io/BasicCalculator.html)  
+*GitHub Repository (Nơi lưu Bug Issues):* [https://github.com/hungvu09122005/test_cal](https://github.com/hungvu09122005/test_cal) (`https://github.com/hungvu09122005/test_cal.git`)  
+*Trang quản lý Bug Issues:* [GitHub Issues Tracker](https://github.com/hungvu09122005/test_cal/issues)  
 *Ngày thực hiện:* 28/09/2026  
 *Phạm vi:* 29 Test Cases x 8 Builds (Build 1 đến Build 8 và Prototype)  
 
