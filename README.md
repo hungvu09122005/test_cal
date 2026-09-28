@@ -51,7 +51,9 @@ Bộ tài liệu và kịch bản kiểm thử cho ứng dụng Web **[Basic Cal
 │   │       └── TC-BUILD-004.md
 │   ├── test-runs/
 │   │   ├── sprint-1-test-run.md      # Báo cáo thực thi Sprint 1 (Prototype)
-│   │   └── sprint-2-regression.md    # Báo cáo kiểm thử hồi quy các Build 1-9
+│   │   ├── sprint-2-regression.md    # Báo cáo kiểm thử hồi quy các Build 1-9
+│   │   ├── build-5-test-run.md       # Báo cáo thực thi Test Run cho Build 5
+│   │   └── build-8-test-run.md       # Báo cáo thực thi Test Run cho Build 8
 │   └── test-summary/
 │       └── traceability-matrix.md    # Ma trận truy vết yêu cầu (RTM)
 └── .github/
@@ -69,3 +71,51 @@ Bộ tài liệu và kịch bản kiểm thử cho ứng dụng Web **[Basic Cal
 - **TC-VAL-xxx**: Module Validation (Kiểm tra dữ liệu)
 - **TC-RESET-xxx**: Module UI Reset & Controls (Xóa dữ liệu & Giao diện)
 - **TC-BUILD-xxx**: Module Build Verification (Xác minh phiên bản & Phát hiện lỗi)
+
+## Chạy Test Tự Động (Playwright)
+
+Bộ kiểm thử tự động sử dụng **Playwright** để kiểm tra tự động các test case trên website [Basic Calculator](https://testsheepnz.github.io/BasicCalculator.html), đặc biệt tập trung vào **Build 5** và **Build 8**:
+
+### 1. Cài đặt môi trường
+```bash
+npm install
+npx playwright install chromium
+```
+
+### 2. Lệnh thực thi kịch bản kiểm thử
+
+- **Chạy cả hai Build 5 và Build 8 (Toàn bộ 58 test cases)**:
+```bash
+npm test
+```
+
+- **Chỉ chạy toàn bộ test case của Build 5 (29 test cases)**:
+```bash
+npm run test:build5
+```
+
+- **Chỉ chạy toàn bộ test case của Build 8 (29 test cases)**:
+```bash
+npm run test:build8
+```
+
+- **Chạy toàn bộ test case theo module trên bản Prototype (29 test cases)**:
+```bash
+npm run test:prototype
+```
+
+- **Chạy tất cả test suites trong toàn dự án (87 test cases)**:
+```bash
+npm run test:all
+```
+
+- **Chạy có giao diện trực quan (Headed mode)**:
+```bash
+npm run test:headed
+```
+
+- **Xem báo cáo HTML trực quan (Playwright HTML Report)**:
+```bash
+npm run test:report
+```
+
