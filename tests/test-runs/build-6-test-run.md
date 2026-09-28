@@ -74,7 +74,7 @@ behavior ("Divide by zero error!") and fails because Build 6 contains the delibe
 |---|---|---|---|
 | BUG-CALC-006 | TC-DIV-003 / TC-BUILD-004 | Build 6 skips the `num2 == 0` guard on Divide, returning `Infinity` instead of showing "Divide by zero error!" | High |
 
-See full bug report: [tests/bug-reports/BUG-CALC-006.md](../bug-reports/BUG-CALC-006.md)
+See full bug report: [.github/ISSUE_TEMPLATE/BUG-CALC-006.md](../../.github/ISSUE_TEMPLATE/BUG-CALC-006.md)
 
 ## How to Run
 
