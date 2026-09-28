@@ -1,0 +1,30 @@
+{
+  "name": "test_cal",
+  "version": "1.0.0",
+  "description": "Bộ tài liệu và kịch bản kiểm thử cho ứng dụng Web **[Basic Calculator](https://testsheepnz.github.io/BasicCalculator.html)** theo tiêu chuẩn kiểm thử phần mềm chuyên nghiệp.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npx playwright test",
+    "test:build1": "npx playwright test tests/playwright/build1/build1.spec.js --reporter=list",
+    "test:build1:headed": "npx playwright test tests/playwright/build1/build1.spec.js --headed --reporter=list",
+    "test:all": "npx playwright test --reporter=list",
+    "test:report": "npx playwright show-report tests/test-results/html-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hungvu09122005/test_cal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hungvu09122005/test_cal/issues"
+  },
+  "homepage": "https://github.com/hungvu09122005/test_cal#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}
