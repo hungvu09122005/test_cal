@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Playwright artifacts (regenerate via `npm run test:build6` / `npm run report`)
+test-results/
+playwright-report/
+playwright/.cache/
+test-run-output.txt
+
+# Editor/OS
+.vscode/
+.DS_Store

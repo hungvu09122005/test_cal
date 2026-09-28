@@ -1,0 +1,22 @@
+{
+  "name": "calculator-test-automation",
+  "version": "1.0.0",
+  "description": "Automated Playwright test suite for Basic Calculator (testsheepnz.github.io/BasicCalculator.html)",
+  "scripts": {
+    "test": "playwright test",
+    "test:build6": "playwright test tests/e2e/build.spec.ts tests/e2e/add.spec.ts tests/e2e/subtract.spec.ts tests/e2e/multiply.spec.ts tests/e2e/divide.spec.ts tests/e2e/concatenate.spec.ts tests/e2e/validation.spec.ts tests/e2e/reset.spec.ts",
+    "test:add": "playwright test tests/e2e/add.spec.ts",
+    "test:subtract": "playwright test tests/e2e/subtract.spec.ts",
+    "test:multiply": "playwright test tests/e2e/multiply.spec.ts",
+    "test:divide": "playwright test tests/e2e/divide.spec.ts",
+    "test:concatenate": "playwright test tests/e2e/concatenate.spec.ts",
+    "test:validation": "playwright test tests/e2e/validation.spec.ts",
+    "test:reset": "playwright test tests/e2e/reset.spec.ts",
+    "test:build": "playwright test tests/e2e/build.spec.ts",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0"
+  }
+}
