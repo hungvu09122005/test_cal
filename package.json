@@ -13,6 +13,11 @@
     "test:build7": "playwright test tests/e2e/build-7.spec.js",
     "test:builds": "playwright test tests/e2e/build-3.spec.js tests/e2e/build-7.spec.js",
     "test:headed": "playwright test --headed"
+    "test": "npx playwright test",
+    "test:build1": "npx playwright test tests/playwright/build1/build1.spec.js --reporter=list",
+    "test:build1:headed": "npx playwright test tests/playwright/build1/build1.spec.js --headed --reporter=list",
+    "test:all": "npx playwright test --reporter=list",
+    "test:report": "npx playwright show-report tests/test-results/html-report"
   },
   "repository": {
     "type": "git",
