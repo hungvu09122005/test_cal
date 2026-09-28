@@ -1,4 +1,18 @@
 {
+  "name": "basic-calculator-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright automation for https://testsheepnz.github.io/BasicCalculator.html",
+  "scripts": {
+    "test": "playwright test",
+    "test:build2": "cross-env BUILDS=2 playwright test",
+    "test:build4": "cross-env BUILDS=4 playwright test",
+    "report": "playwright show-report",
+    "test-run-report": "node scripts/generate-test-run.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "cross-env": "^10.1.0"
   "name": "test_cal",
   "version": "1.0.0",
   "description": "Bộ tài liệu và kịch bản kiểm thử cho ứng dụng Web **[Basic Calculator](https://testsheepnz.github.io/BasicCalculator.html)** theo tiêu chuẩn kiểm thử phần mềm chuyên nghiệp.",
@@ -14,6 +28,17 @@
     "test:all": "npx playwright test",
     "test:headed": "npx playwright test tests/scripts/build-5.spec.js tests/scripts/build-8.spec.js --headed",
     "test:report": "npx playwright show-report tests/test-reports/html-report"
+    "test": "playwright test",
+    "test:prototype": "playwright test tests/e2e/build-0-prototype.spec.js",
+    "test:build3": "playwright test tests/e2e/build-3.spec.js",
+    "test:build7": "playwright test tests/e2e/build-7.spec.js",
+    "test:builds": "playwright test tests/e2e/build-3.spec.js tests/e2e/build-7.spec.js",
+    "test:headed": "playwright test --headed"
+    "test": "npx playwright test",
+    "test:build1": "npx playwright test tests/playwright/build1/build1.spec.js --reporter=list",
+    "test:build1:headed": "npx playwright test tests/playwright/build1/build1.spec.js --headed --reporter=list",
+    "test:all": "npx playwright test --reporter=list",
+    "test:report": "npx playwright show-report tests/test-results/html-report"
   },
   "repository": {
     "type": "git",
@@ -22,6 +47,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/hungvu09122005/test_cal/issues"
   },

@@ -119,3 +119,31 @@ npm run test:headed
 npm run test:report
 ```
 
+---
+
+## Tự động hóa kiểm thử với Playwright (E2E Automation)
+
+Dự án cài đặt bộ test tự động sử dụng **Playwright** và mô hình **Page Object Model (POM)**:
+- **`src/pages/CalculatorPage.js`**: Đóng gói các tương tác và selector của trang Basic Calculator.
+- **`tests/e2e/build-3.spec.js`**: Kiểm tra tính năng và phát hiện khiếm khuyết trên **Build 3** (*"always treats like a number"*).
+- **`tests/e2e/build-7.spec.js`**: Kiểm tra tính năng và phát hiện khiếm khuyết trên **Build 7** (*"Uses answer, not number 1 as first for operation"*).
+
+### Hướng dẫn chạy Test
+
+```bash
+# 1. Cài đặt dependencies
+npm install
+
+# 2. Chạy toàn bộ test
+npm test
+
+# 3. Chạy riêng test cho Build 3
+npm run test:build3
+
+# 4. Chạy riêng test cho Build 7
+npm run test:build7
+
+# 5. Chạy test có giao diện (Headed mode)
+npm run test:headed
+```
+
