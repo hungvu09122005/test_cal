@@ -1,7 +1,11 @@
 {
-  "name": "calculator-test-automation",
+  "name": "test_cal",
   "version": "1.0.0",
-  "description": "Automated Playwright test suite for Basic Calculator (testsheepnz.github.io/BasicCalculator.html)",
+  "description": "Bộ tài liệu và kịch bản kiểm thử cho ứng dụng Web **[Basic Calculator](https://testsheepnz.github.io/BasicCalculator.html)** theo tiêu chuẩn kiểm thử phần mềm chuyên nghiệp.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
   "scripts": {
     "test": "playwright test",
     "test:build6": "playwright test tests/e2e/build.spec.ts tests/e2e/add.spec.ts tests/e2e/subtract.spec.ts tests/e2e/multiply.spec.ts tests/e2e/divide.spec.ts tests/e2e/concatenate.spec.ts tests/e2e/validation.spec.ts tests/e2e/reset.spec.ts",
@@ -13,10 +17,30 @@
     "test:validation": "playwright test tests/e2e/validation.spec.ts",
     "test:reset": "playwright test tests/e2e/reset.spec.ts",
     "test:build": "playwright test tests/e2e/build.spec.ts",
+    "test:prototype": "playwright test tests/e2e/build-0-prototype.spec.js",
+    "test:build1": "npx playwright test tests/playwright/build1/build1.spec.js --reporter=list",
+    "test:build1:headed": "npx playwright test tests/playwright/build1/build1.spec.js --headed --reporter=list",
+    "test:build3": "playwright test tests/e2e/build-3.spec.js",
+    "test:build7": "playwright test tests/e2e/build-7.spec.js",
+    "test:builds": "playwright test tests/e2e/build-3.spec.js tests/e2e/build-7.spec.js",
+    "test:all": "npx playwright test --reporter=list",
     "test:headed": "playwright test --headed",
+    "test:report": "npx playwright show-report tests/test-results/html-report",
     "report": "playwright show-report"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hungvu09122005/test_cal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hungvu09122005/test_cal/issues"
+  },
+  "homepage": "https://github.com/hungvu09122005/test_cal#readme",
   "devDependencies": {
-    "@playwright/test": "^1.47.0"
+    "@playwright/test": "^1.63.0"
   }
 }
