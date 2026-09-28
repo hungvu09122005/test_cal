@@ -21,6 +21,13 @@
     "test": "tests"
   },
   "scripts": {
+    "test": "npx playwright test tests/scripts/build-5.spec.js tests/scripts/build-8.spec.js",
+    "test:build5": "npx playwright test tests/scripts/build-5.spec.js",
+    "test:build8": "npx playwright test tests/scripts/build-8.spec.js",
+    "test:prototype": "npx playwright test tests/scripts/TC-*.spec.js",
+    "test:all": "npx playwright test",
+    "test:headed": "npx playwright test tests/scripts/build-5.spec.js tests/scripts/build-8.spec.js --headed",
+    "test:report": "npx playwright show-report tests/test-reports/html-report"
     "test": "playwright test",
     "test:prototype": "playwright test tests/e2e/build-0-prototype.spec.js",
     "test:build3": "playwright test tests/e2e/build-3.spec.js",

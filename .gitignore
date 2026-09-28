@@ -1,5 +1,7 @@
 node_modules/
 test-results/
+tests/test-reports/
+playwright-report/
 playwright-report/
 playwright-report/
 test-results/
